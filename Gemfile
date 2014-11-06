@@ -9,7 +9,17 @@ gem 'jquery-rails',         '4.0.0.beta2'
 gem 'turbolinks',           '2.3.0'
 gem 'jbuilder',             '2.2.3'
 gem 'rails-html-sanitizer', '1.0.1'
+gem "therubyracer"
+gem "less-rails"
+gem 'twitter-bootstrap-rails', '2.2.8'
 gem 'sdoc',                 '0.4.0', group: :doc
+
+group :test do
+	gem 'cucumber-rails'
+	gem 'rspec'
+	gem 'database_cleaner'
+	gem 'selenium-webdriver'
+end
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
