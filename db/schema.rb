@@ -14,8 +14,7 @@
 ActiveRecord::Schema.define(version: 20141106043858) do
 
   create_table "users", force: true do |t|
-    t.string   "name",            limit: 255
-    t.string   "email",           limit: 255
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "password_digest"
