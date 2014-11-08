@@ -1,3 +1,32 @@
+We built this code using Cloud9, and that is how we are familiar setting it up and executing it.
+
+Step 1: Log in to cloud9, and create a workspace using the fork url from github.
+
+Step 2: Click "Start Editing"
+
+Step 3: $ gem install rails -v 4.2.0.beta4
+
+Step 4: $ bundle install
+
+Step 5: $ rails s -b $IP -p $PORT
+
+Step 6: click "share" at the top of the screen, and click whatever is listed in the 
+        "Application" text box, and click "Open" when it appears.
+
+Step 7: You are at our home page! Congratulations!
+
+
+
+
+
+
+
+
+
+
+
+
+
 Most of this code is borrowed or modified from the code at railstutorial.org 
 (under the MIT License, and the Beerware License), and the skeleton code given during class.
 
