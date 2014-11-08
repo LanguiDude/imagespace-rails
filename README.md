@@ -1,39 +1,33 @@
-### README
-This is the skeleton for image hosting and editing app called ImageSpace. You can name your project anything you want.
+Most of this code is borrowed or modified from the code at railstutorial.org 
+(under the MIT License, and the Beerware License), and the skeleton code given during class.
 
-To continue your project on top of this, clone this code and do following.
+The MIT License
 
-## To setup project
+Copyright (c) 2014 Michael Hartl
 
-* Install RVM (http://rvm.io/)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-* Install ruby by `rvm install ruby 2.0`
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
 
-* do `rvm use 2.0`
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 
-* Install dependencies by `bundle install`
-
-* Run server with `rails server`
-
-* Go to your web browser and open "http://localhost:3000"
-
-* You are ready to roll :)
-
-
-*The UI is built with twitter bootstrap, less and jquery*
-
-
-The home page does nothing other than taking email and password. If you click on the 'sign in' you will be taken to the same home page.
-
-
-## To run sample unit test
-
-* run `bundle exec rake test`
-
-The source file for test is at test folder.
-
-## To run sample functional test
-
-*run `bundle exe rake cucumber`
-
-*The functional test is written on Cucumber steps with Selenium driver and Capybara. You can see the tests at features folder*
+/*
+ * ----------------------------------------------------------------------------
+ * "THE BEERWARE LICENSE" (Revision 43):
+ * Michael Hartl wrote this code. As long as you retain this notice you
+ * can do whatever you want with this stuff. If we meet some day, and you think
+ * this stuff is worth it, you can buy me a beer in return.
+ * ----------------------------------------------------------------------------
+ */
