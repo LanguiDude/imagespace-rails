@@ -11,11 +11,15 @@
       <div id="fullscreen_bg" class="fullscreen_bg"/>
 
 			<div class="container">
-<%= form_for(:session, url: login_path) do |f| %>
+<%= form_for(:session, :html => {:class => "form-signin"}, url: login_path)  do |f| %>
 				<!--form class="form-signin" action="/login" method="post"-->
 					<h1 class="form-signin-heading text-muted">Sign In</h1>
 					<input type="text" class="form-control" name="session[email]" id="lemail-input" placeholder="Email address" required="" autofocus="">
 					<input type="bottompassword" name="session[password]" class="form-control" id="lpassword-input" placeholder="Password" required="">
+	      <%= f.label :remember_me, class: "checkbox inline" do %>
+        <%= f.check_box :remember_me %>
+        <span style="color: white;">Remember me on this computer</span>
+      <% end %>
 					<button class="btn btn-lg btn-primary btn-block" id="sign_in" type="submit">
 					Sign In
 					</button>
@@ -26,7 +30,7 @@
 	
 
 			<div class="container">
-<%= form_for User.new  do |f| %>
+<%= form_for User.new, :html => {:class => "form-signin"}  do |f| %>
 
 				<!--form class="form-signin" accept-charset="UTF-8" action="/users" id="new_user" class="new_user" method="post"-->
 <%= render 'shared/error_messages', object: f.object %>
