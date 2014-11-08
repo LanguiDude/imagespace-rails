@@ -20,13 +20,6 @@ Step 7: You are at our home page! Congratulations!
 
 
 
-
-
-
-
-
-
-
 Most of this code is borrowed or modified from the code at railstutorial.org 
 (under the MIT License, and the Beerware License), and the skeleton code given during class.
 
