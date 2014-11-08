@@ -6,6 +6,7 @@ ImageSpace::Application.routes.draw do
   #resources :logins
   
   Rails.application.routes.draw do
+    get    'signup'  => 'home#index'
 
     get    'login'   => 'sessions#new'
     post   'login'   => 'sessions#create'
