@@ -11,20 +11,22 @@
       <div id="fullscreen_bg" class="fullscreen_bg"/>
 
 			<div class="container">
-
-				<form class="form-signin">
+<%= form_for(:session, url: login_path) do |f| %>
+				<!--form class="form-signin" action="/login" method="post"-->
 					<h1 class="form-signin-heading text-muted">Sign In</h1>
-					<input type="text" class="form-control" id="lemail-input" placeholder="Email address" required="" autofocus="">
-					<input type="bottompassword" class="form-control" id="lpassword-input" placeholder="Password" required="">
+					<input type="text" class="form-control" name="session[email]" id="lemail-input" placeholder="Email address" required="" autofocus="">
+					<input type="bottompassword" name="session[password]" class="form-control" id="lpassword-input" placeholder="Password" required="">
 					<button class="btn btn-lg btn-primary btn-block" id="sign_in" type="submit">
 					Sign In
 					</button>
-				</form>
-			</div>
+
+				<!--/form-->
+<% end %>
+</div>
 	
 
 			<div class="container">
-<%= form_for User.new do |f| %>
+<%= form_for User.new  do |f| %>
 
 				<!--form class="form-signin" accept-charset="UTF-8" action="/users" id="new_user" class="new_user" method="post"-->
 <%= render 'shared/error_messages', object: f.object %>
@@ -37,7 +39,7 @@
 					Register
 					</button>
 					
-				</form>
+				<!--/form-->
 <% end %>
 
 			</div>

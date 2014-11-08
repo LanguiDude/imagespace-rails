@@ -1,6 +1,16 @@
 ImageSpace::Application.routes.draw do
+  #get 'sessions/new'
+
   root "home#index"
   resources :users
+  #resources :logins
+  
+  Rails.application.routes.draw do
+
+    get    'login'   => 'sessions#new'
+    post   'login'   => 'sessions#create'
+    delete 'logout'  => 'sessions#destroy'
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
